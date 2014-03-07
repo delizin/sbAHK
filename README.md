@@ -1,7 +1,10 @@
-sbAHK
-=====
-
 #AutoHotKey scripts for Shadowbane
 
-Goals
+##Goals
+..*Play to crush
 
+##Features
+..*Scripts
+
+##Requirements
+..*AutoHotKey
