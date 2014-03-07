@@ -1,10 +1,10 @@
 #AutoHotKey scripts for Shadowbane
 
-##Goals
-..*Play to crush
+###Goals
+  + Play to crush
 
-##Features
-..*Scripts
+###Features
+  + Scripts
 
-##Requirements
-..*AutoHotKey
+###Requirements
+  + AutoHotKey
