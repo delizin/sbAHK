@@ -1,4 +1,7 @@
 sbAHK
 =====
 
-Scripts to automate tasks in Shadowbane
+#AutoHotKey scripts for Shadowbane
+
+Goals
+
