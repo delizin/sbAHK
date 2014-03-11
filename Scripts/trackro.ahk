@@ -23,7 +23,7 @@
         getKeyState, mmbState, MButton
         if tracking and (mmbState = "U")
         {
-            controlSend,, 1, ahk_id %trackID%
+            controlSend,, ``, ahk_id %trackID%
         }
         sleep, 500
     }
