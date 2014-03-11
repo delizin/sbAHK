@@ -5,8 +5,10 @@
 sbLocation = "C:\Shadowbane - Throne of Oblivion\sb.exe"
 windowTitle = sbLock
 
-/* If our scripted window isn't running then launch it
-   and give it our unique title */
+/* 
+    If our scripted window isn't running then launch it
+    and give it our unique title
+*/
 IfWinNotExist, windowTitle
 {
     run, %sbLocation%
