@@ -27,6 +27,8 @@ WinGet, sbID, ID, sbLock
 !#1::
 Loop
 {
+    ; Make sure self targeted
+    ControlSend,, {End}, ahk_id %sbID%
     ; Fires aoe twice
     Loop, 2
     {
@@ -47,7 +49,7 @@ Loop
         - State 2 = stam heal (5)
         - State 3 = heal (6)
     */
-    if sState <= 2
+    if sState = 1
     {
         ; Stam heal "Surpass Limits"
         ControlSend,, 5, ahk_id %sbID%
@@ -57,14 +59,18 @@ Loop
         Sleep, 7500
         sState++
     }
-    else if sState = 3
+    else if sState = 2
     {
+        ; Stam heal "Surpass Limits"
+        ControlSend,, 5, ahk_id %sbID%
+        ; Cast time 2.5 sec
+        sleep, 2500
         ; Personal heal "Psychic Healing"
         ControlSend,, 6, ahk_id %sbID%
         ; Cast time 3 sec
         Sleep, 3000
         ; Remaining AoE cooldown
-        Sleep, 7000
+        Sleep, 4500
         sState := 1
     }
 }
