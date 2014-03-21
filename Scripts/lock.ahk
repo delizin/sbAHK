@@ -27,8 +27,6 @@ WinGet, sbID, ID, sbLock
 !#1::
 Loop
 {
-    ; Make sure self targeted
-    ControlSend,, `End, ahk_id %sbID%
     ; Fires aoe twice
     Loop, 2
     {
