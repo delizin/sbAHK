@@ -1,7 +1,14 @@
+/*
+    Script to run warlock PL
+    Make sure to have yourself targeted when you start the script
+    
+    Assumes 18 trains in stam conversion
+*/
+
 ; Forces only one instance of this script
 #SingleInstance force
 
-; Set application path and desired window title
+; Set application path
 sbLocation = "C:\Shadowbane - Throne of Oblivion\sb.exe"
 
 ; Variables to keep track of repeated skills
