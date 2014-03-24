@@ -30,7 +30,7 @@ WinGet, sbID, ID, sbLock
 Loop
 {
 ; Fires aoe twice
-    Loop, 2
+    Loop, 1
     {
 ; mental aoe
         ControlSend,, 3, ahk_id %sbID%
@@ -56,6 +56,10 @@ order is:
         ControlSend,, 5, ahk_id %sbID%
 ; Cast time 2.5 sec
         sleep, 2500
+; Personal heal "Psychic Healing"
+        ControlSend,, 6, ahk_id %sbID%
+; Cast time 3 sec
+        Sleep, 3000
 ; Remaining AoE cooldown
         Sleep, 7500
         sState++
@@ -66,7 +70,15 @@ order is:
 ; Stam heal "Surpass Limits"
         ControlSend,, 5, ahk_id %sbID%
 ; Cast time 2.5 sec
-        sleep, 2500
+        sleep, 2800
+; Stam heal "Surpass Limits"
+        ControlSend,, 5, ahk_id %sbID%
+; Cast time 2.5 sec
+        sleep, 2800
+; Personal heal "Psychic Healing"
+        ControlSend,, 6, ahk_id %sbID%
+; Cast time 3 sec
+        Sleep, 3000
 ; Personal heal "Psychic Healing"
         ControlSend,, 6, ahk_id %sbID%
 ; Cast time 3 sec
@@ -78,7 +90,7 @@ order is:
 
 
 
-    if mState >= 3
+    if mState >= 4
     {
 	; Drain mana
 	ControlSend,, 7, ahk_id %sbID%
