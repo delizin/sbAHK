@@ -25,7 +25,7 @@ IfWinNotExist sbLock
 ; Get window's unique identifier
 WinGet, sbID, ID, sbLock
 
-; Launch script with Window Key + Alt + 1
+; Launch script with Alt + ` (~)
 !`::
 Loop
 {
